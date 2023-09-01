@@ -1,0 +1,15 @@
+C:\Users\franc\OneDrive\Escritorio\Facultad-2do-cuatrimestre\Taller2\tl2-tp1-2023-FranceFalci\bin\Debug\net7.0\tl2-tp1-2023-FranceFalci.exe
+C:\Users\franc\OneDrive\Escritorio\Facultad-2do-cuatrimestre\Taller2\tl2-tp1-2023-FranceFalci\bin\Debug\net7.0\tl2-tp1-2023-FranceFalci.deps.json
+C:\Users\franc\OneDrive\Escritorio\Facultad-2do-cuatrimestre\Taller2\tl2-tp1-2023-FranceFalci\bin\Debug\net7.0\tl2-tp1-2023-FranceFalci.runtimeconfig.json
+C:\Users\franc\OneDrive\Escritorio\Facultad-2do-cuatrimestre\Taller2\tl2-tp1-2023-FranceFalci\bin\Debug\net7.0\tl2-tp1-2023-FranceFalci.dll
+C:\Users\franc\OneDrive\Escritorio\Facultad-2do-cuatrimestre\Taller2\tl2-tp1-2023-FranceFalci\bin\Debug\net7.0\tl2-tp1-2023-FranceFalci.pdb
+C:\Users\franc\OneDrive\Escritorio\Facultad-2do-cuatrimestre\Taller2\tl2-tp1-2023-FranceFalci\obj\Debug\net7.0\tl2-tp1-2023-FranceFalci.csproj.AssemblyReference.cache
+C:\Users\franc\OneDrive\Escritorio\Facultad-2do-cuatrimestre\Taller2\tl2-tp1-2023-FranceFalci\obj\Debug\net7.0\tl2-tp1-2023-FranceFalci.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\franc\OneDrive\Escritorio\Facultad-2do-cuatrimestre\Taller2\tl2-tp1-2023-FranceFalci\obj\Debug\net7.0\tl2-tp1-2023-FranceFalci.AssemblyInfoInputs.cache
+C:\Users\franc\OneDrive\Escritorio\Facultad-2do-cuatrimestre\Taller2\tl2-tp1-2023-FranceFalci\obj\Debug\net7.0\tl2-tp1-2023-FranceFalci.AssemblyInfo.cs
+C:\Users\franc\OneDrive\Escritorio\Facultad-2do-cuatrimestre\Taller2\tl2-tp1-2023-FranceFalci\obj\Debug\net7.0\tl2-tp1-2023-FranceFalci.csproj.CoreCompileInputs.cache
+C:\Users\franc\OneDrive\Escritorio\Facultad-2do-cuatrimestre\Taller2\tl2-tp1-2023-FranceFalci\obj\Debug\net7.0\tl2-tp1-2023-FranceFalci.dll
+C:\Users\franc\OneDrive\Escritorio\Facultad-2do-cuatrimestre\Taller2\tl2-tp1-2023-FranceFalci\obj\Debug\net7.0\refint\tl2-tp1-2023-FranceFalci.dll
+C:\Users\franc\OneDrive\Escritorio\Facultad-2do-cuatrimestre\Taller2\tl2-tp1-2023-FranceFalci\obj\Debug\net7.0\tl2-tp1-2023-FranceFalci.pdb
+C:\Users\franc\OneDrive\Escritorio\Facultad-2do-cuatrimestre\Taller2\tl2-tp1-2023-FranceFalci\obj\Debug\net7.0\tl2-tp1-2023-FranceFalci.genruntimeconfig.cache
+C:\Users\franc\OneDrive\Escritorio\Facultad-2do-cuatrimestre\Taller2\tl2-tp1-2023-FranceFalci\obj\Debug\net7.0\ref\tl2-tp1-2023-FranceFalci.dll
