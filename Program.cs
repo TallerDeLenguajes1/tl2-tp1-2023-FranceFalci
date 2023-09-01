@@ -17,6 +17,9 @@ internal class Program
     cadeteriaA.listarCadetes();
 
     RunMenuPrincipal();
+
+
+
     void RunMenuPrincipal()
     {
       string[] options = { "Dar alta pedido", "asignar cadete", "cambiar estado pedido", "SALIR" };
@@ -40,6 +43,10 @@ internal class Program
 
       }
     }
+
+    // void DarAltaPedido(){
+
+    // }
 
   }
 }
