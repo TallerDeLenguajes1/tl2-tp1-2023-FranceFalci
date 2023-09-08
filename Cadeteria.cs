@@ -11,48 +11,79 @@ public class Cadeteria
   private int telefono;
 
   List<Cadete> listaCadetes;
-
+  List<Pedido> listaPedidos;
   public List<Cadete> ListaCadetes { get => listaCadetes; set => listaCadetes = value; }
 
   public Cadeteria(string nombre, int telefono)
   {
     this.telefono = telefono;
     this.nombre = nombre;
+    this.listaPedidos = new List<Pedido>();
   }
-  public void crearPedido(int nroPedido, string obs, Cliente cliente, estado estado, int idCadete)
+  public void crearPedido(string nombre, string direccion, int telefono, string dirReferencia, int nroPedido, string obs)
   {
+    var nuevoPedido = new Pedido(nombre, direccion, telefono, dirReferencia, nroPedido, obs);
+    listaPedidos.Add(nuevoPedido);
+  }
+
+  public void AsignarPedido(int nroPedido, int idCadete)
+  {
+    var pedido = listaPedidos.FirstOrDefault(pedido => pedido.NroPedido == nroPedido);
     var cadete = ListaCadetes.FirstOrDefault(cadete => cadete.Id == idCadete);
-    cadete.crearPedido(nroPedido, obs, cliente, estado);
-    // foreach (Cadete cadete in listaCadetes)
-    // {
-    //   if (cadete.Id == idCadete)
-    //   {
-    //     cadete.crearPedido(nroPedido, obs, cliente, estado);
-
-
-    //   }
-    // }
+    pedido.IdCadete = cadete.Id;
   }
 
-  public void reasignarPedido(int idCadeteActual, int idNuevoCadete, Pedido pedido)
+  public int cantidadPedidos()
   {
-    var cadeteActual = ListaCadetes.FirstOrDefault(cadete => cadete.Id == idCadeteActual);
+    return listaPedidos.Count();
+  }
+
+  public void reasignarPedido(int nroPedido, int idNuevoCadete)
+  {
     var nuevoCadete = ListaCadetes.FirstOrDefault(cadete => cadete.Id == idNuevoCadete);
-    nuevoCadete.crearPedido(pedido.NroPedido, pedido.Observacion, pedido.Cliente, pedido.Estado);
-    cadeteActual.eliminarPedido(pedido.NroPedido);
-    // cadete.crearPedido(nroPedido, obs, cliente, estado);
+    var pedido = listaPedidos.FirstOrDefault(pedido => pedido.NroPedido == nroPedido);
+    pedido.IdCadete = nuevoCadete.Id;
+
   }
 
-  public void cambiarEstado(int nroPedido, estado nuevoEstado, int idCadete)
+  public void cambiarEstado(int nroPedido, estado nuevoEstado)
   {
-    var cadete = ListaCadetes.FirstOrDefault(cadete => cadete.Id == idCadete);
-    cadete.cambiarEstado(nroPedido, nuevoEstado);
+    // var cadete = ListaCadetes.FirstOrDefault(cadete => cadete.Id == idCadete);
+    // cadete.cambiarEstado(nroPedido, nuevoEstado);
+    var pedido = listaPedidos.FirstOrDefault(pedido => pedido.NroPedido == nroPedido);
+    pedido.Estado = nuevoEstado;
   }
   public void listarCadetes()
   {
     foreach (var cadete in listaCadetes)
     {
       Console.WriteLine(cadete.Nombre);
+    }
+  }
+
+  public void listarPedidos()
+  {
+    foreach (var pedido in listaPedidos)
+    {
+      // Console.WriteLine();
+
+      // cadeteriaA.listarCadetes();
+      Console.WriteLine("nro pedido:  {0}", pedido.NroPedido);
+      if (pedido.IdCadete == 0)
+      {
+        Console.WriteLine("cadete sin asignar");
+
+      }
+      else
+      {
+        Console.WriteLine("id Cadete: {0}", pedido.IdCadete);
+      }
+      Console.WriteLine("estado: {0}", pedido.Estado);
+      Console.WriteLine("CLiente: {0}", pedido.Cliente.Nombre);
+      Console.WriteLine("dir CLiente: {0}", pedido.Cliente.Direccion);
+
+      Console.WriteLine("-----------------");
+
     }
   }
 }
